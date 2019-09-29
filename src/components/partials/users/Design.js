@@ -5,11 +5,21 @@ import { handleInputChange } from '../../../store/actions';
 
 export class Design extends Component {
 
+    state = {
+        fonts : [
+
+        ]
+    }
+
     changeColorStyle = (e) =>{
         this.props.dispatch(handleInputChange({value: e.hex, name: 'color'}))
     }
+    handleChange = (e) => {
+        this.props.dispatch(handleInputChange(e.target))
+    }
     render() {
         const { color } = this.props.form;
+        const { font } = this.props.form;
         return (
             <div className="image">
             <div className="flex items-center mb-4">
@@ -23,10 +33,11 @@ export class Design extends Component {
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                            Font family
                         </label>
-                        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                            <option>New Mexico</option>
-                            <option>Missouri</option>
-                            <option>Texas</option>
+                        <select id="fonts" name="font" onChange={this.handleChange} class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                            <option value="arial">Arial</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="helvetica">Helvetica</option>
+                            <option value="Shrikhand">Rubik</option>
                         </select>
                      </div>
                     <div class="w-full md:w-1/2 px-3">

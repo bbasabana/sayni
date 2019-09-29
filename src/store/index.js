@@ -8,6 +8,7 @@ const initialState = {
     form : {
         firstName: '',
         color: '',
+        font:'',
         lastName: '',
         profesional:'',
         department:'',
