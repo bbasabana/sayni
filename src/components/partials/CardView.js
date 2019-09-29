@@ -17,12 +17,19 @@ class CardView extends Component {
                             <img className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="https://pbs.twimg.com/profile_images/1113391996406829056/5EAomi6X_400x400.jpg"/>
                         </div>
                         <div className="text-center md:text-left  text-gray-800 pl-4">
-                            <h2 className="text-lg text-gray-800 user-name"> {form.firstName} {form.lastName}</h2>
-                            <p className="text-sm pb-3 text-gray-800 user-title"> {form.profesional} | {form.enterpriseName} | {form.department}</p>
-                            <div className="text-gray-600 text-xs user-phone"> Téléphone(s): <span className="cardshow">{form.phone}</span></div>
-                            <div className="text-gray-600 text-xs">Email: <span className="cardshow">{form.email}</span></div>
-                                <div className="text-gray-600 text-xs">Site web: <span className="cardshow">{form.website}</span> </div>
-                                <div className="text-gray-600 text-xs">Adresse: <span className="cardshow">{form.address}</span></div>
+                            <h2 className="text-lg text-gray-900 user-name"> {form.firstName} {form.lastName}</h2>
+                            <p className="text-sm pb-3 text-gray-900 user-title"> {form.profesional} | {form.enterpriseName} | {form.department}</p>
+                            <div className="text-gray-600 text-xs user-phone"> Téléphone(s): &nbsp;
+                            <span style={{color: form.color}}>{form.phone}</span></div>
+                            <div className="text-gray-600 text-xs">Email: &nbsp;
+                             <span style={{color: form.color}}>{form.email}</span>
+                            </div>
+                            <div className="text-gray-600 text-xs">Site web: &nbsp;
+                            <span style={{color: form.color}}>{form.website}</span> 
+                            </div>
+                            <div className="text-gray-600 text-xs">Adresse: &nbsp;
+                            <span style={{color: form.color}}>{form.address}</span>
+                            </div>
                             </div>
                     </div>
                 </div>
