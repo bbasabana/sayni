@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Image extends Component {
+class Social extends Component {
     render() {
         return (
             <div className="image">
@@ -27,9 +27,8 @@ class Image extends Component {
                 Suivant
               </button>
             </div>
-
         )
     }
 }
 
-export default Image
+export default Social

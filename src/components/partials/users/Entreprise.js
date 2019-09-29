@@ -3,7 +3,7 @@ import './../../../styles/Entreprise.css';
 import { connect } from 'react-redux';
 import { handleInputChange } from '../../../store/actions';
 
-export class Entreprise extends Component {
+class Entreprise extends Component {
 
     inputHandlerEntreprise = (e) =>{
         this.props.dispatch(handleInputChange(e.target))
@@ -13,7 +13,7 @@ export class Entreprise extends Component {
         return (
             <div className="entreprise">
                 <div className="flex items-center mb-4">
-                    <div className="border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">2</div>
+                    <div className="bg-red-600 border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">2</div>
                     <h2 className="text-lg title-bloc">Ajoutez les informations de l'entreprise</h2>
                 </div>
                 <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 flex flex-col">
@@ -52,6 +52,9 @@ export class Entreprise extends Component {
                         </div>
                     </form>
                 </div>
+                <button className="bg-black-600 text-white font-bold py-4 px-6 mt-4 rounded-full next-button">
+                Suivant
+              </button>
             </div>
 
         )

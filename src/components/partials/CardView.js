@@ -14,7 +14,8 @@ class CardView extends Component {
                     </div>
                     <div className="md:flex bg-white rounded-lg p-6 mt-20">
                         <div className="image-profile">
-                            <img className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="https://pbs.twimg.com/profile_images/1113391996406829056/5EAomi6X_400x400.jpg"/>
+                            <img className="bg-gray-500 h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" 
+                            src="https://pbs.twimg.com/profile_images/1113391996406829056/5EAomi6X_400x400.jpg"/>
                         </div>
                         <div className="text-center md:text-left  text-gray-800 pl-4"  style={{fontFamily:form.font}}>
                             <h2 className="text-lg text-gray-900 user-name"> {form.firstName} {form.lastName}
@@ -30,7 +31,7 @@ class CardView extends Component {
                             <span style={{color: form.color}}>{form.website}</span> 
                             </div>
                             <div className="text-gray-600 text-xs">Adresse: &nbsp;
-                            <span style={{color: form.color}}>{form.address}</span>
+                           <span style={{color: form.color}}>{form.address}</span>
                             </div>
                             </div>
                     </div>

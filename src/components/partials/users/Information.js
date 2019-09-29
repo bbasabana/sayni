@@ -14,7 +14,7 @@ class Information extends Component {
        return (
             <div className="information">
               <div className="flex items-center mb-4">
-                  <div className="border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">1</div>
+                  <div className="bg-red-600 border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">1</div>
                   <h2 className="text-lg title-bloc">Ajoutez vos informations personnelles</h2>
               </div>
               <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 flex flex-col">

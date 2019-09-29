@@ -39,10 +39,10 @@ class Menu extends Component {
                         </Link>
                     </li>
                     <li className="mb-3 lg:mb-2">
-                        <a className={`text-grey-darkest ${pathname==='/social'?'active':''}`}>
+                        <Link to="/social" className={`text-grey-darkest ${pathname==='/social'?'active':''}`}>
                         <img src={social}/>
                         <span>Réseaux sociaux</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="mb-3 lg:mb-2">
                         <Link to="/design" className={`text-grey-darkest ${pathname==='/design'?'active':''}`}>
