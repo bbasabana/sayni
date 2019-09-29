@@ -1,22 +1,27 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
+@font-face{
+    font-family: "Dosis-regular";
+    src:url("https://fonts.googleapis.com/css?family=Dosis&display=swap")
+  }
+  @font-face{
+    font-family: "Dosis-light";
+    src: url("https://fonts.googleapis.com/css?family=Dosis:300&display=swap")
+  }
+  @font-face{
+    font-family: "Dosis-medium";
+    src: url("https://fonts.googleapis.com/css?family=Dosis:500&display=swap")
+  }
+  @font-face{
+    font-family: "Dosis-bold";
+    src: url("https://fonts.googleapis.com/css?family=Dosis:700&display=swap")
+  }
+  html,
+  body{
+    font-family: "Dosis-regular", sans-serif !important;
+    margin: 0;
+  }
+  
+  html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  

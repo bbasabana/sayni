@@ -1,0 +1,18 @@
+.information .title-bloc {
+    color: #545e6f !important;
+} 
+.next-button{
+    background-image: linear-gradient(to right,#ff8a00,#da1b60);
+}
+.next-button:active,
+.next-button:focus
+{
+    border:none;
+    outline: none;
+    -moz-outline-style: none; 
+}
+
+.next-button:hover
+{
+    background: #20123a;
+}
