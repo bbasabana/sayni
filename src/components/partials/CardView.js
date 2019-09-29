@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import '../../styles/CardView.css';
 
 class CardView extends Component {
     render() {
@@ -18,10 +19,10 @@ class CardView extends Component {
                         <div className="text-center md:text-left  text-gray-800 pl-4">
                             <h2 className="text-lg text-gray-800 user-name"> {form.firstName} {form.lastName}</h2>
                             <p className="text-sm pb-3 text-gray-800 user-title"> {form.profesional} | {form.enterpriseName} | {form.department}</p>
-                            <div className="text-gray-600 text-xs user-phone">Téléphone(s): </div>
-                            <div className="text-gray-600 text-xs">Email: {form.email}</div>
-                                <div className="text-gray-600 text-xs">Site web: {form.website} </div>
-                                <div className="text-gray-600 text-xs">Adresse: {form.address}</div>
+                            <div className="text-gray-600 text-xs user-phone"> Téléphone(s): <span className="cardshow">{form.phone}</span></div>
+                            <div className="text-gray-600 text-xs">Email: <span className="cardshow">{form.email}</span></div>
+                                <div className="text-gray-600 text-xs">Site web: <span className="cardshow">{form.website}</span> </div>
+                                <div className="text-gray-600 text-xs">Adresse: <span className="cardshow">{form.address}</span></div>
                             </div>
                     </div>
                 </div>
