@@ -4,6 +4,8 @@ import github from './../../../assets/icons/github.png';
 import instagram from './../../../assets/icons/instagram.png';
 import linkedin from './../../../assets/icons/linkedin.png';
 import skype from './../../../assets/icons/skype.png';
+import { connect } from 'react-redux';
+import { handleInputChange } from '../../../store/actions';
 
 
 class Social extends Component {
@@ -116,12 +118,12 @@ class Social extends Component {
                         <div class="flex -mx-2">
                             <div class="w-1/3 px-2">
                                 <div class="h-12">
-                                <img src={facebook} style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('facebook')}/>
+                                <img src={facebook}  name="facebook" style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('facebook')}/>
                                 </div>
                             </div>
                             <div class="w-1/3 px-2">
                                 <div class="h-12">
-                                <img src={github} style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('github')}/> 
+                                <img src={github}  name="github" style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('github')}/> 
                                 </div>
                             </div>
                             <div class="w-1/3 px-2">
@@ -156,4 +158,9 @@ class Social extends Component {
     }
 }
 
-export default Social
+const mapStateToProps = (state) => ({
+    ...state,
+  })
+  
+  
+export default connect(mapStateToProps)(Social)
