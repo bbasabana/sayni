@@ -14,8 +14,8 @@ const initialState = {
         department:'',
         email:'',
         phone:'',
-        facebook:'',
-        github:'',
+        socialfacebook:'',
+        socialgithub:'',
         ...user
       }
 }

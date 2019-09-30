@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import '../../styles/CardView.css';
+import facebook from './../../assets/icons/facebook.png';
+import github from './../../assets/icons/github.png';
+import instagram from './../../assets/icons/instagram.png';
+import linkedin from './../../assets/icons/linkedin.png';
+import skype from './../../assets/icons/skype.png';
+
 
 class CardView extends Component {
     render() {
         const {form} = this.props
+        const iconstyle = {
+            width : '24px',
+        }
         return (
             <div className="w-1/2 h-12 ml-4">
                 <p className="font-semibold text-lg py-4 pl-6 title-bloc">Aperçu de la signature</p>
@@ -31,9 +40,50 @@ class CardView extends Component {
                             <span style={{color: form.color}}>{form.website}</span> 
                             </div>
                             <div className="text-gray-600 text-xs">Adresse: &nbsp;
-                           <span style={{color: form.color}}>{form.address}</span>
+                                <span style={{color: form.color}}>{form.address}</span>
                             </div>
+                            <div class="px-2 mt-4">
+                        <div class="flex -mx-2">
+                            <div class="w-1/3 px-2">
+                                <div class="h-12">
+                                    <a href={`https://web.facebook.com/${form.socialfacebook}`} target="_blank">
+                                        <img src={facebook}  
+                                        style={iconstyle} />
+                                    </a>
+                                </div>
                             </div>
+                            <div class="w-1/3 px-2">
+                                <div class="h-12">
+                                <img src={github}  
+                                name="github" 
+                                style={iconstyle} 
+                                 /> 
+                                </div>
+                            </div>
+                            <div class="w-1/3 px-2">
+                                <div class="h-12">
+                                 <img src={instagram}
+                                 style={iconstyle} 
+                                 /> 
+                                </div>
+                            </div>
+                            <div class="w-1/3 px-2">
+                                <div class="h-12">
+                                <img src={linkedin} 
+                                style={iconstyle} 
+                                 /> 
+                                </div>
+                            </div>
+                            <div class="w-1/3 px-2">
+                                <div class="h-12">
+                                <img src={skype} 
+                                style={iconstyle} 
+                                 /> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
