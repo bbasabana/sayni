@@ -1,0 +1,32 @@
+.alert-success {
+    min-width: 350px; 
+    padding: 13px; 
+    position: absolute; 
+    z-index: 1; 
+    left: 40%;
+    color:#fff;;
+    border-color:green !important;
+    bottom: 40px; 
+    z-index: 9999999999999;
+    font-size: 12px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-animation: fadeOut 7s linear forwards;
+    animation: fadeOut 7s linear forwards;
+  
+  }
+
+  .svg-icon, path {
+      color: #fff !important;
+  }
+  
+  @keyframes fadeOut {
+      0% 	{ opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; -webkit-transform: translateY(0px);}
+      99% { opacity: 0; -webkit-transform: translateY(-30px);}
+      100% { opacity: 0; }
+  }
+  

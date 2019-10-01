@@ -1,7 +1,23 @@
 import React, { Component } from 'react'
+import Notification from '../../notification/notification';
 
 
 class Installation extends Component {
+
+    state = {
+        render : ''
+    }
+    NotificationShow  = (compName, e) => {
+        console.log(compName)
+        this.setState({render:compName})
+    }
+    _renderSubComp(){
+        switch(this.state.render){
+            case 'notify': return <Notification/>
+            default:
+                return;
+        }
+    }
     render() {
         return (
             <div className="installation">
@@ -10,7 +26,9 @@ class Installation extends Component {
                     <h2 className="text-lg title-bloc">Étapes à suivre pour appliquer votre signature</h2>
                 </div>
                 <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 flex flex-col">
-                    <button className="bg-black-600  w-full text-white font-bold py-4 px-6 mt-4 rounded-full next-button">
+                    <button 
+                    onClick={this.NotificationShow.bind(this, 'notify')}
+                    className="bg-black-600  w-full text-white font-bold py-4 px-6 mt-4 rounded-full next-button">
                     Copier la signature dans le presse-papier
                     </button>
                 </div>
@@ -23,6 +41,7 @@ class Installation extends Component {
                  </span>
 
                 </p>
+                {this._renderSubComp()}
             </div>
         )
     }
