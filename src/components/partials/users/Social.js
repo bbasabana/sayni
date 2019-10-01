@@ -29,7 +29,7 @@ class Social extends Component {
                                 <input type="text" 
                                   name="socialfacebook" 
                                   onChange={this.InputUrlSocial} 
-                                  value={form.socialFacebook}
+                                  value={form.socialfacebook}
                                   class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
@@ -63,7 +63,12 @@ class Social extends Component {
                                 <div class="flex -mr-px">
                                     <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.instagram.com/</span>
                                 </div>	
-                                <input type="text" class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                <input 
+                                  name="socialinstagram" 
+                                  onChange={this.InputUrlSocial} 
+                                  value={form.socialinstagram}
+                                type="text" 
+                                class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
                     </div>
@@ -77,7 +82,12 @@ class Social extends Component {
                                 <div class="flex -mr-px">
                                     <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.linkedin.com/</span>
                                 </div>	
-                                <input type="text" class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                <input 
+                                  name="socialLinkedin" 
+                                  onChange={this.InputUrlSocial} 
+                                  value={form.socialLinkedin}
+                                 type="text"
+                                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
                     </div>
@@ -91,7 +101,12 @@ class Social extends Component {
                                 <div class="flex -mr-px">
                                     <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">@skype/</span>
                                 </div>	
-                                <input type="text" class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="identifiant" />
+                                <input 
+                                  name="socialskype" 
+                                  onChange={this.InputUrlSocial} 
+                                  value={form.socialskype}
+                                 type="text"
+                                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="identifiant" />
                             </div>	
                         </div>
                     </div>

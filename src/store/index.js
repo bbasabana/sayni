@@ -16,6 +16,10 @@ const initialState = {
         phone:'',
         socialfacebook:'',
         socialgithub:'',
+        socialinstagram:'',
+        socialLinkedin:'',
+        socialskype:'',
+        photo: '',
         ...user
       }
 }

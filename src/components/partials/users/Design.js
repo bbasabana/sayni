@@ -52,7 +52,7 @@ class Design extends Component {
                 </div>
                 </form>
             </div>
-            <button className="bg-black-600 text-white font-bold py-4 px-6 mt-4 rounded-full next-button">
+              <button className="bg-black-600 text-white font-bold py-4 px-6 mt-4 rounded-full next-button">
                 Suivant
               </button>
         </div>

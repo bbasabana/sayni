@@ -12,7 +12,6 @@ const Layout = (props) => {
                   <div className="flex mb-4">
                       <div className="w-1/2 h-12">
                        {props.children}
-                        <app-entreprise></app-entreprise>
                       </div>
                       <CardView/>
                   </div>

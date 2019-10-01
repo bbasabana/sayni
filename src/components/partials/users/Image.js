@@ -1,8 +1,24 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
+import { handleInputChange } from '../../../store/actions';
+
 
 class Image extends Component {
+    imageRef = React.createRef();
+    onPhotoChange = (e) => {
+        const file = e.target.files[0];
+        let reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload =  () => {
+            this.props.dispatch(handleInputChange({ name: 'photo', value: reader.result }))
+        };
+        reader.onerror = function (error) {
+            console.log('Error: ', error);
+        };
+    }
     render() {
+        const { photo } = this.props.form;
         return (
             <div className="image">
                 <div className="flex items-center mb-4">
@@ -14,12 +30,17 @@ class Image extends Component {
                         <div className="md:flex bg-white rounded-lg p-6 mt-4">
                             <div className="image-profile">
                                 <img className="bg-gray-300 h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" 
-                                src=""/>
+                                src={photo}/>
                             </div>
+                            <input type="file" hidden onChange={this.onPhotoChange} ref={this.imageRef} />
                             <div className="text-center md:text-left  text-gray-800 pl-4">
                                 <p className="text-sm pb-3 text-gray-800 user-title">
                                    Téléchargez les images en format jpg, png ou gif.</p>
-                                <button className="px-8 py-2 rounded-sm text-white bg-indigo-900">Ajoutez une image</button>
+                                <button
+                                    type="button"
+                                    className="px-8 py-2 rounded-sm text-white bg-indigo-900"
+                                    onClick={() => console.log(this.imageRef.current.click())}
+                                >Ajoutez une image</button>
                             </div>
                         </div>
                     </form>
@@ -33,4 +54,6 @@ class Image extends Component {
     }
 }
 
-export default Image
+const mapStateToProps = (state) => state
+
+export default connect(mapStateToProps)(Image);
