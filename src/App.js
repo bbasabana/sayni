@@ -9,6 +9,7 @@ import Entreprise from './components/partials/users/Entreprise';
 import Image from './components/partials/users/Image';
 import Design from './components/partials/users/Design';
 import Social from './components/partials/users/Social';
+import Installation from './components/partials/users/Installation';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/image" exact render={(props) => <Layout {...props}><Image /></Layout>} />
             <Route path="/design" exact render={(props) => <Layout {...props}><Design /></Layout>} />
             <Route path="/social" exact render={(props) => <Layout {...props}><Social /></Layout>} />
+            <Route path="/installation" exact render={(props) => <Layout {...props}><Installation /></Layout>} />
           </Switch>
       </div>
     </div>

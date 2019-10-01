@@ -37,15 +37,15 @@ class CardView extends Component {
                             <p className="text-sm pb-3 text-gray-900 user-title"> {form.profesional} | {form.enterpriseName} | {form.department}
                             </p>
                             <div className="text-gray-600 text-xs user-phone"> Téléphone(s): &nbsp;
-                            <span style={{color: form.color}}>{form.phone}</span></div>
+                            <span  className="font-bold" style={{color: form.color}}>{form.phone}</span></div>
                             <div className="text-gray-600 text-xs">Email: &nbsp;
-                             <span style={{color: form.color}}>{form.email}</span>
+                             <span className="font-bold" style={{color: form.color}}>{form.email}</span>
                             </div>
                             <div className="text-gray-600 text-xs">Site web: &nbsp;
-                            <span style={{color: form.color}}>{form.website}</span> 
+                            <span className="font-bold" style={{color: form.color}}>{form.website}</span> 
                             </div>
                             <div className="text-gray-600 text-xs">Adresse: &nbsp;
-                                <span style={{color: form.color}}>{form.address}</span>
+                                <span className="font-bold" style={{color: form.color}}>{form.address}</span>
                             </div>
                             <div class="px-2 mt-4">
                                 <div class="flex -mx-2">
@@ -107,7 +107,7 @@ class CardView extends Component {
                            </div>
                         </div>
                     </div>
-                    <div className="m-3">
+                    <div className="m-3 h-10 text-right p-3">
                     <a href="" class="text-gray-800 rounded shadow-md py-2 px-6 mt-4 inline-flex items-center">
                                 <span class="mr-2 text-sm">Made with </span>
                                 <img src={logo}

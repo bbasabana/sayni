@@ -16,9 +16,13 @@ const Layout = (props) => {
                       <CardView/>
                   </div>
               </div>
+              
             </div>
             <div className="w-full md:w-1/4 bg-gray-400 p-4 text-gray-700 right-home">
               <Menu {...props}/>
+              <div class="text-center mt-40">
+                 <div class="font-light text-spaceblue-light text-sm">Made with ❤️️ in DRCongo 🇨🇩</div>
+              </div>
             </div>
         </div>
     )

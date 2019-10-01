@@ -46,15 +46,15 @@ class Menu extends Component {
                     </li>
                     <li className="mb-3 lg:mb-2">
                         <Link to="/design" className={`text-grey-darkest ${pathname==='/design'?'active':''}`}>
-                        <img src={design} />
-                        <span>Design</span>
+                          <img src={design} />
+                          <span>Design</span>
                         </Link>
                     </li>
                     <li className="mb-3 lg:mb-2">
-                        <a className="text-grey-darkest">
-                        <img src={setup}/>
-                        <span>Installation</span>
-                        </a>
+                      <Link to="/installation" className={`text-grey-darkest ${pathname==='/installation'?'active':''}`}>
+                          <img src={setup}/>
+                          <span>Installation</span>
+                      </Link>
                     </li>        
                   </ul>
                 </div>
