@@ -108,11 +108,11 @@ class CardView extends Component {
                         </div>
                     </div>
                     <div className="m-3 h-10 text-right p-3">
-                    <a href="" class="text-gray-800 rounded shadow-md py-2 px-6 mt-4 inline-flex items-center">
-                                <span class="mr-2 text-sm">Made with </span>
-                                <img src={logo}
-                                style={iconlogo}  />
-                    </a>
+                        <a href="" class="text-gray-800 rounded shadow-md py-2 px-6 mt-4 inline-flex items-center">
+                                    <span class="mr-2 text-sm">Made with </span>
+                                    <img src={logo}
+                                    style={iconlogo}  />
+                        </a>
                     </div>
                 </div>
             </div>
