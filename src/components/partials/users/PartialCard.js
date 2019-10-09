@@ -31,7 +31,7 @@ export class PartialCard extends Component {
                                         </div>
                                         </td>
                                         <td style={{paddingLeft:'20px', wordBreak:'break-all'}}>
-                                            <div style={{fontSize:'12px',color:'#000000',marginBottom:'7px'}}>
+                                            <div style={{fontSize:'12px',color:'#000000',marginBottom:'7px', fontFamily:form.font}}>
                                                 <p style={{margin:'3px 0px',fontSize:'20px',fontWeight:'bold'}}>
                                                     <span style={{marginRight:'5px'}}>{form.firstName}</span>
                                                     <span>{form.lastName}</span></p>

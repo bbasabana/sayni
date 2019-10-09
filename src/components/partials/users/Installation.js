@@ -26,22 +26,31 @@ class Installation extends Component {
                     <h2 className="text-lg title-bloc">Étapes à suivre pour appliquer votre signature</h2>
                 </div>
                 <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 flex flex-col">
+                   <p className="font-bold text-2xl text-gray-700">Ajouter votre signature électronique</p> 
+                    <div className="p-6 text-gray-800 font-normal">
+                     <span className="mb-4">
+                       1. Cliquez sur votre signature électronique ci-dessus pour la copier.
+                     </span>  <br/>
+                     <span>
+                       2. Accédez à vos paramètres de messagerie et collez votre signature dans l'éditeur de signature.
+                     </span>
+                    
+                    <div className="px-6 py-2 text-gray-600">
+                        <p className="bg-gray-200 px-6 py-2 text-gray-700 mb-4 text-sm">
+                            Si vous utilisez l'application Mac Mail par défaut, désactivez l'option 
+                            «Toujours faire correspondre la police de message par défaut» avant de coller.
+                        </p>
 
-                Cliquez sur votre signature électronique ci-dessus pour la copier.
-                Accédez à vos paramètres de messagerie et collez votre signature dans l'éditeur de signature.
-                Si vous utilisez l'application Mac Mail par défaut, désactivez l'option «Toujours faire correspondre la police de message par défaut» avant de coller.
-                Si vous utilisez le site Web Gmail, ouvrez les paramètres Gmail. Collez votre signature dans l’éditeur de signatures, cochez la case située sous l’éditeur de signatures, puis cliquez sur "Enregistrer les modifications".
-                C'est ça! Maintenant, essayez d'envoyer un email avec votre nouvelle signature.
-                Besoin d'aide? Contactez notre support.
-                    <p className="mt-6 p-6">
-                    <span className="font-bold text-gray-800"> PS: Veuillez vous positionner à l'endroit indiquer pour mettre la signature selon votre client du mail. </span> 
-
-                    <br/> <br/> <br/>
-                    <span className="font-sm text-gray-800">
-                    - Collez la signature copiée dans la section Modifier la signature (Ctrl + V).
-                    </span>
-
-                    </p>
+                        <p className="bg-gray-200 px-6 py-2 text-gray-700 text-sm">
+                            Si vous utilisez le site Web Gmail, ouvrez les <a href="https://mail.google.com/mail/u/0/#settings/general" target="_blank" className="text-blue-600">paramètres Gmail</a>. <br/>
+                            Collez votre signature dans l’éditeur de signatures, cochez la case située sous l’éditeur de signatures, puis cliquez sur "Enregistrer les modifications".
+                        </p>
+                        
+                    </div>
+                     <p className="mt-4">
+                      C'est ça! Maintenant, essayez d'envoyer un email avec votre nouvelle signature.🎉
+                     </p>
+                    </div>
                 </div>
                 {this._renderSubComp()}
             </div>
