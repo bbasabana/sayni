@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Notification from '../../notification/notification';
-
+import { connect } from 'react-redux';
 
 class Installation extends Component {
 
@@ -19,6 +19,7 @@ class Installation extends Component {
         }
     }
     render() {
+        const {form} = this.props
         return (
             <div className="installation">
                 <div className="flex items-center mb-4">
@@ -50,6 +51,7 @@ class Installation extends Component {
                      <p className="mt-4">
                       C'est ça! Maintenant, essayez d'envoyer un email avec votre nouvelle signature.🎉
                      </p>
+                     <p className="mt-4">Future  <span className="font-bold">{form.firstName}</span>, will thank you. 🙏</p>
                     </div>
                 </div>
                 {this._renderSubComp()}
@@ -58,4 +60,8 @@ class Installation extends Component {
     }
 }
 
-export default Installation
+const mapStateToProps = (state) => ({
+    ...state,
+  })
+
+export default connect(mapStateToProps)(Installation)

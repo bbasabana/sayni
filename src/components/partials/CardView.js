@@ -15,7 +15,7 @@ new Clipboard('.btn-cb');
 
 class CardView extends Component {
     state = {
-        render : ''
+        render : '',
     }
     NotificationShow  = (compName, e) => {
         console.log(compName)
@@ -28,6 +28,7 @@ class CardView extends Component {
                 return;
         }
     }
+
     render() {
         const {form} = this.props
         return (
@@ -45,12 +46,13 @@ class CardView extends Component {
                 </div>
                 <div className="form-info px-8 pt-6 pb-8 mb-4 flex flex-col"
                 style={{position:'relative'}}>
-                    <button 
-                    onClick={this.NotificationShow.bind(this, 'notify')}
-                    data-clipboard-target="#clipboard-box"
-                    className="bg-black-600  w-full text-white font-bold py-4 px-6 mt-4 rounded-full next-button btn-cb">
+                    {form.lastName || form.firstName ? 
+                    (<button 
+                     onClick={this.NotificationShow.bind(this, 'notify')}
+                     data-clipboard-target="#clipboard-box"
+                     className="bg-black-600  w-full text-white font-bold py-4 px-6 mt-4 rounded-full next-button btn-cb disabled">
                     Copier la signature dans le presse-papier
-                    </button>
+                    </button>):null}
                 </div>
                 {this._renderSubComp()}
             </div>
