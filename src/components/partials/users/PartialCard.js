@@ -139,13 +139,6 @@ export class PartialCard extends Component {
                                                                         </tbody>
                                                                     </table>
                                                                 </td>):null}
-
-                                                            
-                                                            </tr>
-                                                            <tr>
-                                                               <td style={{paddingRight:'7px',paddingTop:'17px', marginLeft: '2em'}}>
-                                                                   <img src={logo} style={{paddingTop:'6px',verticalAlign:'middle',maxWidth:'80px', maxHeight:'80px',position:'absolute'}}/>
-                                                               </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -158,6 +151,11 @@ export class PartialCard extends Component {
                         </tr>
                         </tbody>
                     </table>
+                    <div>
+                        <div style={{paddingRight:'7px',paddingTop:'7px', marginLeft: '2em', display:'inline'}}>
+                               <span>Generator with</span>  <img src={logo} style={{paddingTop:'6px',verticalAlign:'middle',maxWidth:'80px', maxHeight:'80px',position:'absolute'}}/>
+                         </div>
+                     </div>
                 </div>
             </div>
         )
