@@ -4,12 +4,7 @@ import Clipboard from 'clipboard';
 import Notification from '../notification/notification';
 import PartialCard from './users/PartialCard';
 import '../../styles/CardView.css';
-import logo from './../../assets/signlogo.png';
-import facebook from './../../assets/icons/facebook.png';
-import github from './../../assets/icons/github.png';
-import instagram from './../../assets/icons/instagram.png';
-import linkedin from './../../assets/icons/linkedin.png';
-import skype from './../../assets/icons/skype.png';
+
 
 new Clipboard('.btn-cb');
 
