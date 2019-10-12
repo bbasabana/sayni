@@ -11,9 +11,9 @@ export class PartialCard extends Component {
     render() {
         const {form} = this.props
         return (
-            <div  class="drc_Blod_signature">
+            <div  className="drc_Blod_signature">
                 <div sayni="signatureBest_drc">
-                <table cellspacing="0" cellpadding="0" style={{borderCollapse:'collapse',color:'#212529',fontFamily:'Arial', fontSize:'14px', tableLayout:'fixed',maxWidth:'450px', paddingBottom:'20px',lineHeight:'1.3'}}>
+                <table  style={{borderCollapse:'collapse',color:'#212529',fontFamily:'Arial', fontSize:'14px', tableLayout:'fixed',maxWidth:'450px', paddingBottom:'20px',lineHeight:'1.3'}}>
                         <tbody>
             <tr>
                 <td style={{paddingBottom:'15px',backgroundImage: 'url(' + { logo } + ')100% 87%/100px no-repeat'}}>
@@ -62,12 +62,12 @@ export class PartialCard extends Component {
                                                     </p>
                                                 </div>
                                                 <div style={{marginBottom:'7px'}}>
-                                                    <table cellpadding="0" cellspacing="0" style={{borderCollapse:'collapse'}}>
+                                                    <table style={{borderCollapse:'collapse'}}>
                                                         <tbody>
                                                             <tr> 
                                                             {form.socialfacebook ? 
                                                                (<td style={{paddingRight:'7px', paddingTop:'7px'}}>
-                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style={{borderCollapse:'collapse'}}>
+                                                                    <table  border="0" align="center" style={{borderCollapse:'collapse'}}>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
@@ -82,7 +82,7 @@ export class PartialCard extends Component {
 
                                                                 {form.socialgithub ? 
                                                                 (<td style={{paddingRight:'7px', paddingTop:'7px'}}>
-                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style={{borderCollapse:'collapse'}}>
+                                                                    <table  border="0" align="center" style={{borderCollapse:'collapse'}}>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
@@ -97,7 +97,7 @@ export class PartialCard extends Component {
 
                                                                 {form.socialinstagram ? 
                                                                 (<td style={{paddingRight:'7px', paddingTop:'7px'}}>
-                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style={{borderCollapse:'collapse'}}>
+                                                                    <table  border="0" align="center" style={{borderCollapse:'collapse'}}>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
@@ -112,7 +112,7 @@ export class PartialCard extends Component {
 
                                                                 {form.socialLinkedin ? 
                                                                 (<td style={{paddingRight:'7px', paddingTop:'7px'}}>
-                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style={{borderCollapse:'collapse'}}>
+                                                                    <table  border="0" align="center" style={{borderCollapse:'collapse'}}>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
@@ -127,7 +127,7 @@ export class PartialCard extends Component {
 
                                                                 {form.socialskype ? 
                                                                 (<td style={{paddingRight:'7px', paddingTop:'7px'}}>
-                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style={{borderCollapse:'collapse'}}>
+                                                                    <table border="0" align="center" style={{borderCollapse:'collapse'}}>
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
@@ -154,8 +154,8 @@ export class PartialCard extends Component {
                     <div>
                         <div style={{paddingRight:'7px',paddingTop:'7px', marginLeft: '2em', display:'inline'}}>
                                <div className="flex sm:inline-flex md:block lg:hidden xl:flex">
-                                <div class="text-gray-700 text-center  text-sm"><span>Generated by</span> </div>
-                                <div class="text-gray-700 text-center ">
+                                <div className="text-gray-700 text-center  text-sm"><span>Generated by</span> </div>
+                                <div className="text-gray-700 text-center ">
                                     <img src={logo} style={{verticalAlign:'middle',maxWidth:'45px', maxHeight:'45px',position:'absolute'}}/>
                                 </div>
                                </div>

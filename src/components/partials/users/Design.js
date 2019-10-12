@@ -20,7 +20,6 @@ class Design extends Component {
     }
     render() {
         const { color } = this.props.form;
-        const { font } = this.props.form;
         return (
             <div className="image">
             <div className="flex items-center mb-4">

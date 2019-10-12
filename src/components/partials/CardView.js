@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Clipboard from 'clipboard';
+import firebaseConfig from './../../firebase';
 import Notification from '../notification/notification';
 import PartialCard from './users/PartialCard';
 import '../../styles/CardView.css';
@@ -11,6 +12,7 @@ new Clipboard('.btn-cb');
 class CardView extends Component {
     state = {
         render : '',
+        signUsers: JSON.parse(localStorage.getItem('user') || '{}')
     }
     NotificationShow  = (compName, e) => {
         console.log(compName)
@@ -26,6 +28,7 @@ class CardView extends Component {
 
     render() {
         const {form} = this.props
+        console.log(this.state.signUsers)
         return (
             <div className="w-1/2 h-12 ml-4">
                 <p className="font-semibold text-lg py-4 pl-6 title-bloc">Aperçu de la signature</p>
