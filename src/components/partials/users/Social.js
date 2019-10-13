@@ -22,15 +22,15 @@ class Social extends Component {
                 return (
                     <div className="facebook">
                         <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 mb-4 flex flex-col">
-                            <div class="flex flex-wrap items-stretch w-full mb-4 relative">
-                                <div class="flex -mr-px">
-                                    <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.facebook.com/</span>
+                            <div className="flex flex-wrap items-stretch w-full mb-4 relative">
+                                <div className="flex -mr-px">
+                                    <span className="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.facebook.com/</span>
                                 </div>	
                                 <input type="text" 
                                   name="socialfacebook" 
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialfacebook}
-                                  class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                  className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
                     </div>
@@ -40,16 +40,16 @@ class Social extends Component {
                 return (
                     <div className="github">
                         <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 mb-4 flex flex-col">
-                            <div class="flex flex-wrap items-stretch w-full mb-4 relative">
-                                <div class="flex -mr-px">
-                                    <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.github.com/</span>
+                            <div className="flex flex-wrap items-stretch w-full mb-4 relative">
+                                <div className="flex -mr-px">
+                                    <span className="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.github.com/</span>
                                 </div>	
                                 <input 
                                  name="socialgithub" 
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialgithub}
                                 type="text"
-                                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
                     </div>
@@ -59,16 +59,16 @@ class Social extends Component {
                  return (
                     <div className="instagram">
                         <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 mb-4 flex flex-col">
-                            <div class="flex flex-wrap items-stretch w-full mb-4 relative">
-                                <div class="flex -mr-px">
-                                    <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.instagram.com/</span>
+                            <div className="flex flex-wrap items-stretch w-full mb-4 relative">
+                                <div className="flex -mr-px">
+                                    <span className="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.instagram.com/</span>
                                 </div>	
                                 <input 
                                   name="socialinstagram" 
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialinstagram}
                                 type="text" 
-                                class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
                     </div>
@@ -78,16 +78,16 @@ class Social extends Component {
                 return (
                     <div className="linkedin">
                         <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 mb-4 flex flex-col">
-                            <div class="flex flex-wrap items-stretch w-full mb-4 relative">
-                                <div class="flex -mr-px">
-                                    <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.linkedin.com/</span>
+                            <div className="flex flex-wrap items-stretch w-full mb-4 relative">
+                                <div className="flex -mr-px">
+                                    <span className="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">www.linkedin.com/</span>
                                 </div>	
                                 <input 
                                   name="socialLinkedin" 
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialLinkedin}
                                  type="text"
-                                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
                             </div>	
                         </div>
                     </div>
@@ -97,16 +97,16 @@ class Social extends Component {
                 return(
                     <div className="skype">
                         <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 mb-4 flex flex-col">
-                            <div class="flex flex-wrap items-stretch w-full mb-4 relative">
-                                <div class="flex -mr-px">
-                                    <span class="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">@skype/</span>
+                            <div className="flex flex-wrap items-stretch w-full mb-4 relative">
+                                <div className="flex -mr-px">
+                                    <span className="flex items-center leading-normal bg-gray-800 rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-white text-sm">@skype/</span>
                                 </div>	
                                 <input 
                                   name="socialskype" 
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialskype}
                                  type="text"
-                                 class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="identifiant" />
+                                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="identifiant" />
                             </div>	
                         </div>
                     </div>
@@ -146,33 +146,33 @@ class Social extends Component {
                 </div>
                 <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-8 flex flex-col">
                     <form className="w-full max-w-lg">
-                    <div class="px-2">
-                        <div class="flex -mx-2">
-                            <div class="w-1/3 px-2">
-                                <div class="h-12">
+                    <div className="px-2">
+                        <div className="flex -mx-2">
+                            <div className="w-1/3 px-2">
+                                <div className="h-12">
                                 <img src={facebook}  
                                 name="facebook" 
                                 value={form.facebook}
                                 style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('facebook')}/>
                                 </div>
                             </div>
-                            <div class="w-1/3 px-2">
-                                <div class="h-12">
+                            <div className="w-1/3 px-2">
+                                <div className="h-12">
                                 <img src={github}  name="github" style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('github')}/> 
                                 </div>
                             </div>
-                            <div class="w-1/3 px-2">
-                                <div class="h-12">
+                            <div className="w-1/3 px-2">
+                                <div className="h-12">
                                 <img src={instagram} style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('instagram')}/> 
                                 </div>
                             </div>
-                            <div class="w-1/3 px-2">
-                                <div class="h-12">
+                            <div className="w-1/3 px-2">
+                                <div className="h-12">
                                 <img src={linkedin} style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('linkedin')}/> 
                                 </div>
                             </div>
-                            <div class="w-1/3 px-2">
-                                <div class="h-12">
+                            <div className="w-1/3 px-2">
+                                <div className="h-12">
                                 <img src={skype} style={iconstyle} onClick={()=>this.OnclickShowContainerSocial('skype')}/> 
                                 </div>
                             </div>

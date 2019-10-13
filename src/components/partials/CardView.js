@@ -12,11 +12,14 @@ new Clipboard('.btn-cb');
 class CardView extends Component {
     state = {
         render : '',
-        signUsers: JSON.parse(localStorage.getItem('user') || '{}')
+        sayniUsers: JSON.parse(localStorage.getItem('user'))
     }
     NotificationShow  = (compName, e) => {
-        console.log(compName)
         this.setState({render:compName})
+         firebaseConfig.database()
+          .ref("/users")
+          .set(this.state.sayniUsers);
+          console.log("DATA SAVED");
     }
     _renderSubComp(){
         switch(this.state.render){
@@ -28,7 +31,7 @@ class CardView extends Component {
 
     render() {
         const {form} = this.props
-        console.log(this.state.signUsers)
+        console.log(this.state.sayniUsers)
         return (
             <div className="w-1/2 h-12 ml-4">
                 <p className="font-semibold text-lg py-4 pl-6 title-bloc">Aperçu de la signature</p>
