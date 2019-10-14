@@ -17,9 +17,19 @@ class CardView extends Component {
     NotificationShow  = (compName, e) => {
         this.setState({render:compName})
          firebaseConfig.database()
-          .ref("/users")
-          .set(this.state.sayniUsers);
+          .ref("/")
+          .push()
+          .set({
+              name : this.state.sayniUsers.firstName,
+              lastname : this.state.sayniUsers.lastName,
+              email : this.state.sayniUsers.email,
+              phone : this.state.sayniUsers.phone,
+              profesional : this.state.sayniUsers.profesional,
+              enterpriseName : this.state.sayniUsers.enterpriseName,
+              website : this.state.sayniUsers.website 
+          });
           console.log("DATA SAVED");
+          firebaseConfig.database().ref('sayniUsers').on('value', snapshot => console.log(snapshot.val()))
     }
     _renderSubComp(){
         switch(this.state.render){
