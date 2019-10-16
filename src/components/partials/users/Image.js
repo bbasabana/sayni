@@ -31,7 +31,7 @@ class Image extends Component {
                         <div className="md:flex bg-white rounded-lg p-6 mt-4">
                             <div className="image-profile">
                                 <img className="bg-gray-300 h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6 image-profile" 
-                                src={photo || "https://image.flaticon.com/icons/svg/149/149071.svg"}/>
+                                src={ photo || "https://image.flaticon.com/icons/svg/149/149071.svg"}/>
                             </div>
                             <input type="file" hidden onChange={this.onPhotoChange} ref={this.imageRef} />
                             <div className="text-center md:text-left  text-gray-800 pl-4">

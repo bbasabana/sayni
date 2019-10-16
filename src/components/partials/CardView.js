@@ -29,7 +29,6 @@ class CardView extends Component {
               website : this.state.sayniUsers.website 
           });
           console.log("DATA SAVED");
-          firebaseConfig.database().ref('sayniUsers').on('value', snapshot => console.log(snapshot.val()))
     }
     _renderSubComp(){
         switch(this.state.render){

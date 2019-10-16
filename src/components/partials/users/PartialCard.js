@@ -24,9 +24,9 @@ export class PartialCard extends Component {
                                     <div style={{width:'119px', borderRight:'1px solid #ffff'}}>
                                         <div style={{height:'99px', width:'99px', borderRadius:'100%', backgroundColor:'#f0f0f0'}}>
                                             <img 
-                                              src={form.photo || "https://pbs.twimg.com/profile_images/1113391996406829056/5EAomi6X_400x400.jpg"} 
+                                              src={form.photo || "https://pbs.twimg.com/profile_images/1113391996406829056/5EAomi6X_400x400.jpg"}
                                                alt="" 
-                                            style={{borderStyle:'none',verticalAlign:'middle',borderRadius:'100%',width:'99px',height:'99px',background:'#ffffff'}}/>
+                                            style={{borderStyle:'none',verticalAlign:'middle',borderRadius:'100%',maxWidth:'99px !important',maxHeight:'99px !important',background:'#ffffff'}}/>
                                         </div>
                                         </div>
                                         </td>
