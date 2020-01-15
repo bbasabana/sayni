@@ -39,7 +39,6 @@ class Image extends Component {
 
             // encode image to data-uri with base64 version of compressed image
             const image = canvas.toDataURL();
-            console.log('image===>', image);
             this.props.dispatch(handleInputChange({ name: 'photo', value: image }));
             
             return image;
