@@ -15,18 +15,25 @@ class CardView extends Component {
         sayniUsers: JSON.parse(localStorage.getItem('user'))
     }
     NotificationShow  = (compName, e) => {
-        this.setState({render:compName})
+        const { sayniUsers } = this.state;
+        const user = sayniUsers || JSON.parse(localStorage.getItem('user'));
+        this.setState({
+            render:compName,
+            sayniUsers: user
+        });
+
+
          firebaseConfig.database()
           .ref("/")
           .push()
           .set({
-              name : this.state.sayniUsers.firstName,
-              lastname : this.state.sayniUsers.lastName,
-              email : this.state.sayniUsers.email,
-              phone : this.state.sayniUsers.phone,
-              profesional : this.state.sayniUsers.profesional,
-              enterpriseName : this.state.sayniUsers.enterpriseName,
-              website : this.state.sayniUsers.website 
+              name : user.firstName,
+              lastname : user.lastName,
+              email : user.email,
+              phone : user.phone,
+              profesional : user.profesional,
+              enterpriseName : user.enterpriseName,
+              website : user.website 
           });
           console.log("DATA SAVED");
     }
@@ -50,7 +57,9 @@ class CardView extends Component {
                     </div>
                     <div id="clipboard-box">
                     <div className="md:flex bg-white rounded-lg p-6 mt-20" style={{fontFamily:form.font}}>
+                         
                          <PartialCard/>
+                   
                     </div>
                   </div>
                 </div>

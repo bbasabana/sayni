@@ -12,11 +12,39 @@ class Image extends Component {
         let reader = new FileReader();
         reader.readAsDataURL(file);
         reader.onload =  () => {
-            this.props.dispatch(handleInputChange({ name: 'photo', value: reader.result }))
+            this.props.dispatch(handleInputChange({ name: 'photo', value: this.imageToDataUri(reader.result, 99, 99 ) }));
+
+            
         };
         reader.onerror = function (error) {
             console.log('Error: ', error);
         };
+    }
+
+    imageToDataUri = (data, width = 40, height = 40) => {
+        // We create an image to receive the Data URI
+        const img = document.createElement('img');
+
+        img.onload = () => {
+            // create an off-screen canvas
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // set its dimension to target size
+            canvas.width = width;
+            canvas.height = height;
+
+            // draw source image into the off-screen canvas:
+            ctx.drawImage(img, 0, 0, width, height);
+
+            // encode image to data-uri with base64 version of compressed image
+            const image = canvas.toDataURL();
+            console.log('image===>', image);
+            this.props.dispatch(handleInputChange({ name: 'photo', value: image }));
+            
+            return image;
+        };
+        return img.src = data;
     }
     render() {
         const { photo } = this.props.form;
