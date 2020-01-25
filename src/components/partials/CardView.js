@@ -57,15 +57,13 @@ class CardView extends Component {
                     </div>
                     <div id="clipboard-box">
                     <div className="md:flex bg-white rounded-lg p-6 mt-20" style={{fontFamily:form.font}}>
-                         
                          <PartialCard/>
-                   
                     </div>
                   </div>
                 </div>
                 <div className="form-info px-8 pt-6 pb-8 mb-4 flex flex-col"
                 style={{position:'relative'}}>
-                    {form.lastName || form.firstName ? 
+                    {form.lastName && form.firstName ? 
                     (<button 
                      onClick={this.NotificationShow.bind(this, 'notify')}
                      data-clipboard-target="#clipboard-box"
