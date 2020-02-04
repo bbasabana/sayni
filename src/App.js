@@ -43,7 +43,7 @@ function App() {
               <img src={Logo} alt="logo sayni"/>
             </div>
           <p>Toutes nos excuses! Nous travaillons sur la version Mobile</p>
-          <span>Veuillez utiliser l'ordinateur pour le moment.</span>
+          <span>Veuillez utiliser votre Ordinateur pour le moment.</span>
       </div>
     </div>
           
