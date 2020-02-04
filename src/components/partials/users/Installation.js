@@ -43,7 +43,7 @@ class Installation extends Component {
                         </p>
 
                         <p className="bg-gray-200 px-6 py-2 text-gray-700 text-sm">
-                            Si vous utilisez le site Web Gmail, ouvrez les <a href="https://mail.google.com/mail/u/0/#settings/general" target="_blank" className="text-blue-600">paramètres Gmail</a>. <br/>
+                            Si vous utilisez le site Web Gmail, ouvrez les <a href="https://mail.google.com/mail/u/0/#settings/general" target="_blank" rel="noopener noreferrer" className="text-blue-600">paramètres Gmail</a>. <br/>
                             Collez votre signature dans l’éditeur de signatures, cochez la case située sous l’éditeur de signatures, puis cliquez sur "Enregistrer les modifications".
                         </p>
                         

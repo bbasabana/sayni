@@ -24,7 +24,7 @@ export class PartialCard extends Component {
                                     <div style={{width:'119px', borderRight:'1px solid #ffff'}}>
                                         <div style={{height:'99px', width:'99px', borderRadius:'100% !important'}}>
                                             <img 
-                                                src={form.photo || "https://www.ziprecruiter.com/protected-upload?upload_id=3e7903a9"}
+                                                src={form.photo || "https://pbs.twimg.com/profile_images/1224448881825480706/UUdyckf6_400x400.jpg"}
                                                 alt="" 
                                                 style={{borderStyle:'none',verticalAlign:'middle',borderRadius:'100%',maxWidth:'99px !important',maxHeight:'99px !important',background:'#ffffff'}}
                                             />
@@ -44,15 +44,15 @@ export class PartialCard extends Component {
                                                     </p>
                                                     <p style={{marginTop:'0px',marginBottom:'3px'}}>
                                                         <span style={{color:'#000000'}}>Phone(s):&nbsp;</span
-                                                            ><a href={`tel:${form.phone}`}  target="_blank"><span  className="font-bold" style={{color: form.color}}>{form.phone}</span></a>
+                                                            ><a href={`tel:${form.phone}`}><span  className="font-bold" style={{color: form.color}}>{form.phone}</span></a>
                                                     </p>
                                                     <p style={{marginTop:'0px',marginBottom:'3px'}}>
                                                         <span style={{color:'#000000'}}>Email:&nbsp;</span>
-                                                        <a href={`mailto:${form.email}`} target="_blank"><span className="font-bold" style={{color: form.color}}>{form.email}</span></a>
+                                                        <a href={`mailto:${form.email}`}><span className="font-bold" style={{color: form.color}}>{form.email}</span></a>
                                                     </p>
                                                     <p style={{marginTop:'0px',marginBottom:'3px'}}>
                                                         <span style={{color:'#000000'}}>Site web:&nbsp;</span>
-                                                        <a href={form.website}  target="_blank"> <span className="font-bold" style={{color: form.color}}>{form.website}</span></a>
+                                                        <a href={form.website} > <span className="font-bold" style={{color: form.color}}>{form.website}</span></a>
                                                     </p>
                                                     <p style={{marginTop:'0px',marginBottom:'3px'}}>
                                                         <span style={{color:'#000000'}}>Adresse:&nbsp;</span>
@@ -72,7 +72,7 @@ export class PartialCard extends Component {
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
-                                                                                    <a href={`https://web.facebook.com/${form.socialfacebook}`} style={{display:'block',height:'22px',width:'22px'}} target="_blank">
+                                                                                    <a href={`https://web.facebook.com/${form.socialfacebook}`} style={{display:'block',height:'22px',width:'22px'}}>
                                                                                         <img src={facebook} alt={form.lastName}  style={{borderStyle:'none',verticalAlign:'middle',maxWidth:'100%', maxHeight:'100%',display:'block'}}/>
                                                                                     </a>
                                                                                 </td>
@@ -87,7 +87,7 @@ export class PartialCard extends Component {
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
-                                                                                    <a  href={`https://github.com/${form.socialgithub}`} style={{display:'block',height:'22px',width:'22px'}} target="_blank">
+                                                                                    <a  href={`https://github.com/${form.socialgithub}`} style={{display:'block',height:'22px',width:'22px'}}>
                                                                                         <img src={github} alt={form.lastName} style={{borderStyle:'none',verticalAlign:'middle',maxWidth:'100%', maxHeight:'100%',display:'block'}} />
                                                                                     </a>
                                                                                 </td>
@@ -102,7 +102,7 @@ export class PartialCard extends Component {
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
-                                                                                    <a href={`https://www.instagram.com/${form.socialinstagram}`} style={{display:'block',height:'22px',width:'22px'}} target="_blank">
+                                                                                    <a href={`https://www.instagram.com/${form.socialinstagram}`} style={{display:'block',height:'22px',width:'22px'}}>
                                                                                         <img src={instagram} alt={form.lastName} style={{borderStyle:'none',verticalAlign:'middle',maxWidth:'100%', maxHeight:'100%',display:'block'}}/>
                                                                                     </a>
                                                                                 </td>
@@ -117,7 +117,7 @@ export class PartialCard extends Component {
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
-                                                                                    <a href={`https://www.linkedin.com/${form.socialLinkedin}`} style={{display:'block',height:'22px',width:'22px'}}  target="_blank">
+                                                                                    <a href={`https://www.linkedin.com/${form.socialLinkedin}`} style={{display:'block',height:'22px',width:'22px'}}>
                                                                                         <img src={linkedin} alt={form.lastName}  style={{borderStyle:'none',verticalAlign:'middle',maxWidth:'100%', maxHeight:'100%',display:'block'}}/>
                                                                                     </a>
                                                                                 </td>
@@ -132,7 +132,7 @@ export class PartialCard extends Component {
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" style={{borderRadius:'0px',width:'26px',height:'26px',color:'#FFFFFF'}}>
-                                                                                    <a href={`@/${form.socialskype}`} style={{display:'block',height:'22px',width:'22px'}}  target="_blank">
+                                                                                    <a href={`@/${form.socialskype}`} style={{display:'block',height:'22px',width:'22px'}}>
                                                                                         <img src={skype} alt={form.lastName}  style={{borderStyle:'none',verticalAlign:'middle',maxWidth:'100%', maxHeight:'100%',display:'block'}}/>
                                                                                     </a>
                                                                                 </td>
@@ -156,9 +156,11 @@ export class PartialCard extends Component {
                         <div style={{paddingRight:'7px',paddingTop:'7px', marginLeft: '2em', display:'inline'}}>
                                <div className="flex sm:inline-flex md:block lg:hidden xl:flex">
                                 <div className="text-gray-700 text-center  text-sm"><span>Generated by</span> </div>
-                                <div className="text-gray-700 text-center ">
-                                    <img src={logo} style={{verticalAlign:'middle',maxWidth:'45px', maxHeight:'45px',position:'absolute'}}/>
-                                </div>
+                                <a href="https://sayni.com/">
+                                    <div className="text-gray-700 text-center ">
+                                        <img src={logo} style={{verticalAlign:'middle',maxWidth:'45px', maxHeight:'45px',position:'absolute'}}/>
+                                    </div>
+                                </a>
                                </div>
                          </div>
                      </div>

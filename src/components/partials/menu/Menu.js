@@ -15,7 +15,7 @@ class Menu extends Component {
         return (
             <div className="home-menu">
               <div className="menu-logo pt-4">
-                <a href=""><img src={logo} alt="logo"/> </a>
+                <a href=""><img src={logo} alt="logo"/><span className="text-white font-bold pl-2 pt-2 absolute">Beta</span></a>
               </div>
               <div className="menu-list">
                 <div className="mb-8 left-menu">
@@ -55,7 +55,7 @@ class Menu extends Component {
                           <img src={setup}/>
                           <span>Installation</span>
                       </Link>
-                    </li>        
+                    </li>         
                   </ul>
                 </div>
               </div>

@@ -68,7 +68,7 @@ class CardView extends Component {
                      onClick={this.NotificationShow.bind(this, 'notify')}
                      data-clipboard-target="#clipboard-box"
                      className="bg-black-600  w-full text-white font-bold py-4 px-6 mt-4 rounded-full next-button btn-cb disabled">
-                    Copier la signature dans le presse-papier
+                     Copier la signature dans le presse-papier
                     </button>):null}
                 </div>
                 {this._renderSubComp()}

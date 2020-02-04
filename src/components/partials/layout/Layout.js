@@ -21,7 +21,9 @@ const Layout = (props) => {
             <div className="w-full md:w-1/4 bg-gray-400 p-4 text-gray-700 right-home">
               <Menu {...props}/>
               <div className="text-center mt-40">
-                 <div className="font-light text-spaceblue-light text-sm">Made with ❤️️ in DRCongo 🇨🇩</div>
+                 <div className="font-light text-spaceblue-light text-sm"><span className="font-bold">Sayni</span> By 
+                  <span className="font-bold">
+                   <a href="http://meyllos.com/" target="_blank" rel="noopener noreferrer" className=" pl-1 no-underline">MeyllOs</a></span> ❤️️ in DRCongo 🇨🇩</div>
               </div>
             </div>
         </div>

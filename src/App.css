@@ -25,3 +25,30 @@
     -webkit-text-size-adjust: 100%; /* 2 */
   }
   
+  .AppMobile .homeMobile{
+    width: 200%;
+    height: 100vh;
+    background: #20123a;
+    position: fixed;
+  }
+  .AppMobile .homeMobile .content{
+    width: 40%;
+    margin-top:30%;
+    position:relative; 
+    display:inline-block;
+  }
+  .AppMobile .homeMobile .content img{
+    width: 200px;
+    margin: auto;
+    padding-bottom:10px;
+    text-align: center !important;
+    z-index: 1;
+  }
+  .AppMobile .homeMobile p{
+    font-weight: lighter;
+    font-size: 1.7rem;
+    letter-spacing: -.03rem;
+    color: white;
+    width: 100vw;
+    text-align: center;
+  }
