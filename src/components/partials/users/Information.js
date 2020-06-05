@@ -16,14 +16,14 @@ class Information extends Component {
             <div className="information">
               <div className="flex items-center mb-4">
                   <div className="bg-red-600 border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">1</div>
-                  <h2 className="text-lg title-bloc">Ajoutez vos informations personnelles</h2>
+                  <h2 className="text-lg title-bloc">Add your personal information</h2>
               </div>
               <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-8 flex flex-col">
                   <form className="w-full max-w-lg" >
                       <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                            Nom
+                          Last name
                           </label>
                           <input
                             name="lastName"
@@ -33,7 +33,7 @@ class Information extends Component {
                         </div>
                         <div className="w-full md:w-1/2 dépx-3">
                           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                            Prénom
+                          First name
                           </label>
                           <input name="firstName"  onChange={this.inputHandler} value={form.firstName} className="appearance-none block w-full focus:bg-gray-200 border border-gray-400 text-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="JBosco"
                           />
@@ -43,15 +43,15 @@ class Information extends Component {
                       <div className="flex flex-wrap -mx-3 mb-6">
                           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                              Profession
+                            Profession
                             </label>
                             <input name="profesional" onChange={this.inputHandler} value={form.profesional} className="appearance-none block w-full focus:bg-gray-200 border border-gray-400 text-gray-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="CTO"/>
                           </div>
                           <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                                Departement
+                            Department
                             </label>
-                            <input name="department" onChange={this.inputHandler} value={form.department} className="appearance-none block w-full focus:bg-gray-200 text-gray-700 border border-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Informatique"/>
+                            <input name="department" onChange={this.inputHandler} value={form.department} className="appearance-none block w-full focus:bg-gray-200 text-gray-700 border border-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Software Development"/>
                           </div>
                       </div>
 
@@ -64,7 +64,7 @@ class Information extends Component {
                           </div>
                           <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                                Téléphone
+                                Phone
                             </label>
                             <input name="phone" onChange={this.inputHandler} value={form.phone}  className="appearance-none block w-full focus:bg-gray-200 text-gray-700 border border-gray-400  rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="+243......"/>
                           </div>
@@ -72,7 +72,7 @@ class Information extends Component {
                   </form>
               </div>
               <Link  to="/entreprise" className="bg-black-600 text-white font-bold py-4 px-6 rounded-full next-button">
-                 Suivant
+                 Next
               </Link>
           </div>
 

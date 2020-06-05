@@ -51,7 +51,7 @@ class Image extends Component {
             <div className="image">
                 <div className="flex items-center mb-4">
                     <div className="bg-red-600 border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">3</div>
-                    <h2 className="text-lg title-bloc">Ajoutez une photo</h2>
+                    <h2 className="text-lg title-bloc">Add a photo</h2>
                 </div>
                 <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-8 flex flex-col">
                     <form className="w-full max-w-lg">
@@ -63,18 +63,18 @@ class Image extends Component {
                             <input type="file" hidden onChange={this.onPhotoChange} ref={this.imageRef} />
                             <div className="text-center md:text-left  text-gray-800 pl-4">
                                 <p className="text-sm pb-3 text-gray-800 user-title">
-                                   Téléchargez les images en format jpg, png ou gif.</p>
+                                Download images in jpg, png or gif format.</p>
                                 <button
                                     type="button"
                                     className="px-8 py-2 rounded-sm text-white bg-indigo-900"
                                     onClick={() => console.log(this.imageRef.current.click())}
-                                >Ajoutez une image</button>
+                                >Add a picture</button>
                             </div>
                         </div>
                     </form>
                 </div>
                 <Link  to="/social" className="bg-black-600 text-white font-bold py-4 px-6 rounded-full next-button">
-                 Suivant
+                 Next
                 </Link>
             </div>
 
