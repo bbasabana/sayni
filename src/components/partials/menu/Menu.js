@@ -29,19 +29,19 @@ class Menu extends Component {
                     <li className="mb-3 lg:mb-2">
                         <Link  to="/entreprise" className={`text-grey-darkest ${pathname==='/entreprise'?'active':''}`}>
                         <img src={enterprise}/>
-                        <span>Entreprise</span>
+                        <span>Enterprise</span>
                         </Link>
                     </li>
                     <li className="mb-3 lg:mb-2">
                         <Link to="/image" className={`text-grey-darkest ${pathname==='/image'?'active':''}`}>
                         <img src={photo}/>
-                        <span>Images</span>
+                        <span>Image</span>
                         </Link>
                     </li>
                     <li className="mb-3 lg:mb-2">
                         <Link to="/social" className={`text-grey-darkest ${pathname==='/social'?'active':''}`}>
                         <img src={social}/>
-                        <span>Réseaux sociaux</span>
+                        <span>Social media</span>
                         </Link>
                     </li>
                     <li className="mb-3 lg:mb-2">
