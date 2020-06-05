@@ -162,7 +162,7 @@ export class PartialCard extends Component {
                                     </div>
                                 </a>
                                </div>
-                         </div>
+                        </div>
                      </div>
                 </div>
             </div>
