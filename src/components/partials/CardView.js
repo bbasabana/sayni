@@ -50,10 +50,10 @@ class CardView extends Component {
         console.log(this.state.sayniUsers)
         return (
             <div className="w-1/2 h-12 ml-4">
-                <p className="font-semibold text-lg py-4 pl-6 title-bloc">Aperçu de la signature</p>
+                <p className="font-semibold text-lg py-4 pl-6 title-bloc">Signature overview</p>
                 <div className="preview-card bg-white shadow-md rounded-lg px-6 pt-6 pb-8 flex flex-col">
                     <div className="header w-full overflow-hidden py-1">
-                        <p className="pl-6 pb-4">Nouveau message</p>
+                        <p className="pl-6 pb-4">New message</p>
                     </div>
                     <div id="clipboard-box">
                     <div className="md:flex bg-white rounded-lg p-6 mt-20" style={{fontFamily:form.font}}>
