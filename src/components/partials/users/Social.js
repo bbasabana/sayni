@@ -30,7 +30,7 @@ class Social extends Component {
                                   name="socialfacebook" 
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialfacebook}
-                                  className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                  className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="username" />
                             </div>	
                         </div>
                     </div>
@@ -49,7 +49,7 @@ class Social extends Component {
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialgithub}
                                 type="text"
-                                className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="username" />
                             </div>	
                         </div>
                     </div>
@@ -68,7 +68,7 @@ class Social extends Component {
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialinstagram}
                                 type="text" 
-                                className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="username" />
                             </div>	
                         </div>
                     </div>
@@ -87,7 +87,7 @@ class Social extends Component {
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialLinkedin}
                                  type="text"
-                                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="nom d'utilisateur" />
+                                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="username" />
                             </div>	
                         </div>
                     </div>
@@ -106,7 +106,7 @@ class Social extends Component {
                                   onChange={this.InputUrlSocial} 
                                   value={form.socialskype}
                                  type="text"
-                                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="identifiant" />
+                                 className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-l-none px-3 text-gray-800 relative" placeholder="username" />
                             </div>	
                         </div>
                     </div>
@@ -142,7 +142,7 @@ class Social extends Component {
             <div className="image">
                 <div className="flex items-center mb-4">
                     <div className="bg-red-600 border-2 border-blue px-3 py-2 rounded-full font-bold text-blue mr-2">4</div>
-                    <h2 className="text-lg title-bloc">Ajoutez liens vers les reseaux sociaux</h2>
+                    <h2 className="text-lg title-bloc">Add links to social networks</h2>
                 </div>
                 <div className="form-info bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-8 flex flex-col">
                     <form className="w-full max-w-lg">
@@ -186,7 +186,7 @@ class Social extends Component {
                 </div>
                 
                 <Link  to="/design" className="bg-black-600 text-white font-bold py-4 px-6 rounded-full next-button">
-                 Suivant
+                 Next
                 </Link>
             </div>
         )
