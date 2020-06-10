@@ -23,7 +23,7 @@ const Layout = (props) => {
               <div className="text-center mt-40">
                  <div className="font-light text-spaceblue-light text-sm"><span className="font-bold">Sayni</span> By 
                   <span className="font-bold">
-                   <a href="http://meyllos.com/" target="_blank" rel="noopener noreferrer" className=" pl-1 no-underline">MeyllOs</a></span> ❤️️ in DRCongo 🇨🇩</div>
+                   <a href="#"  className=" pl-1 no-underline">BBasabana</a></span> ❤️️ in DRCongo 🇨🇩</div>
               </div>
             </div>
         </div>
